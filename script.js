@@ -1,9 +1,8 @@
 // ========== USUARIOS AUTORIZADOS ==========
 const USERS = [
-    // emails: []  -> si está vacío, el usuario puede consultar cualquier correo.
-    // emails: ["a@a.com","b@b.com"] -> solo permitirá esos correos.
     { username: "nyx112", password: "2212", expiresAt: new Date("2025-12-26"), emails: [] },
-    { username: "cliea1", password: "2212", expiresAt: new Date("2027-12-12"), emails: [] }
+    { username: "cliea1", password: "2212", expiresAt: new Date("2027-12-12"), emails: [] },
+    { username: "andres", password: "1234", expiresAt: new Date("2026-01-14"), emails: ["codecastle06@gmail.com"] }
 ];
 
 const MAX_ATTEMPTS = 1000000;
