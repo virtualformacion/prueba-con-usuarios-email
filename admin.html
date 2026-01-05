@@ -186,7 +186,7 @@ window.delUser = async function(e){
   const username = e.target.getAttribute("data-user");
   const res = await callFunc({ action: "delete", adminUser, adminPass, payload: { username } });
   if (res && res.success) {
-    alert("Usuario eliminado y commit efectuado.");
+    alert("El usuario ha sido eliminado.");
     const list = await callFunc({ action: "list", adminUser, adminPass });
     renderUsers(list.users);
   } else {
