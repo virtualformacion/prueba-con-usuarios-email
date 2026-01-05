@@ -218,14 +218,7 @@ function escapeHtml(s) {
   if (!s && s !== 0) return "";
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c]));
 }
-    <!-- Botón flotante que redirige a panel admin -->
-  <a href="https://prueba-usuarios-con-email.netlify.app" target="_blank">
-    <button class="floating-btn">
-      <i class="fas fa-laptop"></i>
-      <span>Administrar</span>
-    </button>
-  </a>
-  
+
 </script>
 </body>
 </html>
